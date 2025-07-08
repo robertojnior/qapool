@@ -1,0 +1,17 @@
+services:
+  db:
+    container_name: qapool-db
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: qapool
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./config/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - qapool_db_data:/var/lib/postgresql/data
+
+volumes:
+  qapool_db_data:
+    name: qapool_db_data
