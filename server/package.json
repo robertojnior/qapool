@@ -1,0 +1,26 @@
+{
+  "name": "qapool-api",
+  "version": "1.0.0",
+  "description": "Refer-A-Friend REST API.",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertojnior/qapool.git"
+  },
+  "keywords": [],
+  "author": "Roberto <robertojunior085@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertojnior/qapool/issues"
+  },
+  "homepage": "https://github.com/robertojnior/qapool#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
